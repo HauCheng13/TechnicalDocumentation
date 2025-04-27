@@ -1,6 +1,6 @@
 # Technical Documentation Page
 
-**GitHub Page** 
+**GitHub Page**: https://haucheng13.github.io/TechnicalDocumentation/
 
 Technical Documentation page! For web development learners...
 
