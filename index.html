@@ -1,1 +1,388 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <nav id="navbar">
+            <header>
+        <h1>Web Development Documentation</h1>
+    </header>
+        <ul class="ul_nav">
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#HTML/CSS">HTML/CSS</a></li>
+            <li><a class="nav-link" href="#Javascript">Javascript</a></li>
+            <li><a class="nav-link" href="#Frontend_frameworks">Frontend frameworks</a></li>
+            <li><a class="nav-link" href="#Backend_development">Backend development</a></li>
+            <li><a class="nav-link" href="#Databases">Databases</a></li>
+            <li><a class="nav-link" href="#APIs">APIs</a></li>          
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id ="Introduction" class="main-section">
+            <header><h1>Introduction</h1></header>
+            <article>
+            <p>Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites. Web development is typically broken down into 3 core areas: Frontend, Backend, Full Stack Development.</p>
+            <p>In the digital age, websites are essential for businesses, organizations, and individuals. They serve as online platforms for communication, information sharing, e-commerce, and entertainment. Web development plays a crucial role in:</p>
+            <ul class="ul_article1">
+                <li>Creating user-friendly websites that provide easy navigation and accessibility.</li>
+                <li>Enabling online business operations such as e-commerce, banking, and social media.</li>
+                <li>Improving user experience (UX) through interactive and responsive design.</li>
+                <li>Ensuring security to protect user data and prevent cyber threats.</li>
+            </ul>
+            <article>
+            
+        </section>
+        <section id="HTML/CSS" class="main-section">
+            <header><h1>HTML/CSS</h1></header>
+            <article>
+                <p>
+                    HTML is the foundation of web development, providing the structure of a webpage. It consists of elements enclosed in angle brackets. Each element serves a different purpose, such as displaying text, images, or interactive content.
+                </p>
+                <p>
+                    <b>Key features of HTML:</b>   
+                </p>
+                <ul class="ul_article1">
+                    <li><b>Document Structure:</b> Every HTML document starts with a declaration &lt!DOCTYPE html&gt that tells the browser which version of HTML to use. The content is enclosed within html tag, which is divided into two main sections:
+
+                    </li>
+                    <li>
+                        <b>Head Section &lthead&gt</b> – Contains metadata, such as the page title, character encoding, and links to external stylesheets or scripts.
+                    </li>
+                    <li>
+                        <b>Body Section &ltbody&gt</b> – Contains the actual content visible on the webpage, such as headings, paragraphs, images, and links.
+                    </li>
+                    <li>
+                        <b>Text Formatting:</b> HTML provides various elements for organizing and formatting text, including headings &lth1 to h6&gt, paragraphs &ltp&gt, bold &ltb&gt, italics &lti&gt, and line breaks &ltbr&gt.
+                    </li>
+                    <li>
+                        <b>Links and Navigation:</b> The a &ltanchor&gt element is used to create hyperlinks, allowing users to navigate between webpages or sections within a page. Links can point to external sites, other pages within the same website, or specific parts of a page using anchor tags.
+                    </li>
+                    <li>
+                        <b>Lists and Tables:</b> HTML supports different types of lists, such as ordered &ltol&gt and unordered &ltul&gt lists, which are useful for organizing content. Tables &lttable&gt help display structured data in rows and columns.
+                    </li>
+                    <li>
+                        <b>Forms and User Input:</b> HTML forms allow users to interact with a webpage by submitting data through input fields, dropdown menus, checkboxes, and buttons. Forms are essential for login pages, contact forms, and search bars.
+                    </li> 
+                </ul>
+            </article>
+        </section>
+        <section id="Javascript" class="main-section">
+            <header><h1>Javascript</h1></header>
+            <article>
+                <p>JavaScript is a high-level programming language that enables interactivity on websites. It allows web pages to update dynamically, handle user interactions, and communicate with servers. JavaScript is an essential part of modern web development, working alongside HTML &ltstructure&gt and CSS &ltstyle&gt to create dynamic web applications.</p>
+                <p><b>JavaScript uses variables to store and manage data.</b></p>
+                <code>
+                    let name = "John"; // String
+                    const age = 25; // Number
+                    isStudent = true; // Boolean
+                </code>
+                <p><b>JavaScript functions allow code reuse and modularity</b></p>
+                <code>
+                    function greet(name) {
+  return "Hello, " + name;
+}
+console.log(greet("Alice"));
+                </code>
+                <p><b>Arrow functions (ES6)</b></p>
+                <code>
+                    const add = (a, b) => a + b;
+console.log(add(5, 10));
+                </code>
+                <p><b>Conditional Statements:</b></p>
+                <code>if (x > 0) {
+  console.log("Positive number");
+} else {
+  console.log("Negative number");
+}</code>
+                <p><b>Loops:</b></p>
+                <code>for (let i = 0; i < 5; i++) {
+  console.log(i);
+}</code>
+                <p><b>Objects:</b></p>
+                <code>let person = {
+  name: "Alice",
+  age: 25,
+  greet: function() {
+    return "Hello!";
+  }
+};
+console.log(person.name);</code>
+                <p><b>Arrays:</b></p>
+                <code>let numbers = [1, 2, 3, 4, 5];
+console.log(numbers[0]);
+               </code>
+                <p>
+                    <b>Dom Manipulation: Javascript interacts with HTML via the Document Object Model(DOM)</b>
+                </p>
+                <code>
+                    document.getElementById("demo").innerHTML = "Hello, JavaScript!";
+                </code>
+                <p><b>Event Handling: </b></p>
+                <code>
+                    document.getElementById("btn").addEventListener("click", function() {
+  alert("Button clicked!");
+});
+                </code>
+                <p>
+                    <b>Asynchronous Javascript: Promises</b>
+                </p>
+                <code>
+                    fetch("https://api.example.com/data")
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+                </code>
+                <p>Async/await</p>
+                <code>
+                    async function fetchData() {
+  try {
+    let response = await fetch("https://api.example.com/data");
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+fetchData();
+                </code>
+                
+            </article>
+        </section>
+        <section id="Frontend_frameworks" class="main-section">
+            <header><h1>Frontend frameworks</h1></header>
+            <article>
+                <p><b>React.JS</b></p>
+                <ul class="ul_article1">
+                    <li>Developed by FaceBook (Meta)</li>
+                    <li>Core Concept: Component-based UI development.</li>
+                    <li>Key Features: 
+                        <ul class="ul_article2">
+                            <li>Uses a virtual DOM for efficient rendering.</li>
+                            <li>Component-based architecture</li>
+                            <li>Supports hooks for state and lifecycle management.</li>
+                            <li>React Native allows mobile development using React.</li>
+                        </ul>
+                    </li>
+                </ul>  
+
+                <p><b>Angular</b> </p> 
+                <ul class="ul_article1">
+                    <li>Developed by: Google</li>
+                    <li>Core concept: Full-fledged framework with typescript</li>
+                    <li>Key Features: <ul class="ul_article2">
+                        <li>Uses two-way data binding.</li>
+                        <li>Built-in dependency injection.</li>
+                        <li>Component-based structures with directives.</li>
+                        <li>Strong CLI for project management</li>
+                    </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="Backend_development" class="main-section">
+            <header><h1>Backend development</h1></header>
+            <p>Backend development focuses on the server-side logic, database interactions, authentication, and API communication that power web applications. It ensures that data is processed efficiently and delivered to the frontend.</p>
+            <p><b>Key aspects of Backend development</b></p>
+            <ul class="ul_article1">
+                <li>Server-Side Programming – Handles requests from the frontend and sends back responses.</li>
+                <li>Database Management – Stores, retrieves, and manipulates data.</li>
+                <li>Authentication & Authorization – Verifies users and controls access to resources.</li>
+                <li>API Development – Provides communication between different software components.</li>
+                <li>Security Measures – Protects data using encryption, hashing, and secure protocols.</li>
+                <li>Performance Optimization – Ensures fast response times and efficient resource use.</li>
+            
+            <p><b>Popular Backend Languages & Frameworks</b></p>
+            <p><b>1. Node.js(Javascript)</b></p>
+            <ul class="ul_article1">
+                <li>Why? Fast, event-driven, and uses JavaScript for full-stack development.</li>
+                <li>Popular Frameworks: 
+                    <ul class="ul_article2">
+                        <li>Express.JS - Minimal and fast for REST APIs</li>
+                        <li>Nest.JS - Structured and Typescript-based</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><b>2. Python(Django and Flask)</b></p>
+            <ul class="ul_article1">
+                <li>Why? Readable syntax, great for machine learning & automation</li>
+                <li>Popular Frameworks: 
+                    <ul class="ul_article2">
+                        <li>Django - Full-featured, batteries-included framework.</li>
+                        <li>Flask - Lightweight and flexible.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="Databases" class="main-section">
+            <header><h1>Databases</h1></header>
+            <article>
+                <p>A database is an organized collection of structured information or data, typically stored electronically in a computer system. Databases are managed by Database Management Systems (DBMS), which allow users to create, read, update, and delete data efficiently.</p>
+                <p><b>Types of Databases</b></p>
+                <ul class="ul_article1">
+                    <li>Relational Databases(RDBMS): 
+                    <ul class="ul_article2">
+                        <li>Structured using tables (rows and columns).</li>
+                        <li>Uses SQL (Structured Query Language) for querying data.</li>
+                        <li>Ensures data integrity with ACID (Atomicity, Consistency, Isolation, Durability) compliance.</li>
+                        <li>Examples: MySQL, PostgreSQL, Microsoft SQL Server, Oracle DB.</li>
+                    </ul>
+                    </li>
+                    <li>NoSQL Databases: 
+                    <ul class="ul_article2">
+                        <li>Designed for unstructured, semi-structured, or structured data.</li>
+                        <li>Provides high scalability and flexibility.</li>
+                        <li>Does not require a fixed schema.</li>
+                    </ul>
+                    </li>
+                    <li>Cloud Databases: 
+                    <ul class="ul_article2">
+                        <li>Hosted on cloud platforms (AWS, Azure, Google Cloud).</li>
+                        <li>Offers scalability, high availability, and managed services.</li>
+                        <li>Examples: Amazon RDS, Google Cloud Firestore, Azure Cosmos DB.</li>
+                    </ul>
+                    </li>
+                    </ul>
+                    <p><b>Popular Database Tools & Technologies</b></p>
+                    <ul class="ul_article1">
+                        <li>SQL Databases 
+                        <ul class="ul_article2">
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>Microsoft SQL Server</li>
+                            <li>Oracle Database</li>
+                        </ul>
+                        </li>
+                         <li>NoSQL Databases 
+                        <ul class="ul_article2">
+                            <li>MongoDB (Document-based)</li>
+                            <li>Redis (Key-value store)</li>
+                            <li>Apache Cassandra (Column-family store)</li>
+                            <li>Neo4j (Graph database)</li>
+                        </ul>
+                        </li>
+                         <li>Cloud Databases 
+                        <ul class="ul_article2">
+                            <li>AWS RDS (Relational Database Service)</li>
+                            <li>Google Firestore</li>
+                            <li>Azure Cosmos DB</li>
+                        </ul>
+                        </li>
+                    </ul>
+            </article>
+        </section>
+        <section id="APIs" class="main-section">
+            <header><h1>APIs</h1></header>
+            <article>
+                <p>An API (Application Programming Interface) is a set of rules and protocols that allows software applications to communicate with each other. APIs define methods, data formats, and access rules, enabling developers to integrate different systems, services, and applications seamlessly.</p>
+                <p><b>Types of APIs</b></p>
+                <ul class="ul_article1">
+                    <li>Web APIs</li>
+                    <li>Library and Framework APIs</li>
+                    <li>Operating Systems APIs</li>
+                    <li>Hardware APIs</li>
+                </ul>
+                <p><b>Web API Architectures</b></p>
+                <ul class="ul_article1">
+                    <li> <b>REST (Representational State Transfer)</b>
+                        <ul class="ul_article2">
+                            <li>Uses HTTP methods (GET, POST, PUT, DELETE)</li>
+                            <li>Stateless architecture (each request is independent)</li>
+                            <li>Data format: Mostly JSON or XML</li>
+                            <li><b>Example API Call:</b></li>
+                            <code>
+                            GET https://api.example.com/users/1
+                            </code>
+                            <li><b>Response:</b></li>
+                            <code>
+                                {
+                                  "id": 1,
+                                  "name": "John Doe",
+                                  "email": "john@example.com"
+                                }
+                            </code>
+                            <li><b>Examples:</b> Twitter API, GitHub API, Spotify API</li>
+                        </ul> 
+                    </li>  
+                </ul>
+                <ul class="ul_article1">
+                    <li> <b>SOAP (Simple Object Access Protocol)</b>
+                        <ul class="ul_article2">
+                            <li>Uses XML-based messaging</li>
+                            <li>More secure but complex</li>
+                            <li>Used in enterprise systems (e.g., banking services)</li>
+                            <li><b>Example request:</b></li>
+                            <code>
+                            &lt;soap:Envelope&gt;
+                            &lt;soap:Body&gt;
+                            &lt;GetUser&gt;
+                            &lt;UserID&gt;1&lt;/UserID&gt;
+                            &lt;/GetUser&gt;
+                            &lt;/soap:Body&gt;
+                            &lt;/soap:Envelope&gt;
+                            </code>
+                        </ul> 
+                    </li>
+                    </ul>
+                    <ul class="ul_article1">
+                    <li> <b>WebSockets</b>
+                        <ul class="ul_article2">
+                            <li>Real-time communication (persistent connection)</li>
+                            <li>Used for chat apps, live updates</li>
+                            <li><b>Example:</b></li>
+                            <code>
+                            const socket = new WebSocket("wss://example.com/socket";
+                            socket.onmessage = (event) => {
+                            console.log(event.data);
+                            };
+                            </code>
+                        </ul> 
+                    </li>
+                    </ul>
+                    <ul class="ul_article1">
+                    <li> <b>GraphQL</b>
+                        <ul class="ul_article2">
+                            <li>Flexible queries (fetch only required data)</li>
+                            <li>Single endpoint for multiple queries</li>
+                            <li>Developed by Facebook</li>
+                            <li><b>Example:</b></li>
+                            <code>
+                            {
+                              user(id: 1) {
+                              name
+                              email
+                            }
+                            }
+                            </code>
+                            <li><b>Response:</b></li>
+                            <code>
+                                {
+                                  "user": {
+                                  "name": "John Doe",
+                                  "email": "john@example.com"
+                                   }
+                                }
+                            </code>
+                        </ul> 
+                    </li>
+                    </ul>
+                    <p><b>Popular APIs</b></p>
+                <ul class="ul_article1">
+                    <li><b>Google Maps API</b> – Location & navigation</li>
+                    <li><b>Twitter API</b> – Social media interactions</li>
+                    <li><b>OpenWeather API</b> – Weather data</li>
+                    <li><b>Stripe API</b> – Payment processing</li>
+                </ul>
+
+            </article>
+        </section>
+    </main>   
+    <footer>
+    </footer>
+</body>
+</html>
